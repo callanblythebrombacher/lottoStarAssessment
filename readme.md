@@ -88,7 +88,7 @@ The project follows a modular structure, with each component responsible for spe
 
 - **CSV Processor**: The main logic for processing lottery data is implemented in the `CSVProcessor` class. It orchestrates the data processing pipeline by coordinating the file handlers and the winning numbers finder.
 
-- **File Handlers**: File handlers, such as `TicketFileReader` and `WinningNumbersFileReader`, are responsible for reading ticket entry and winning number files from the filesystem. They utilize generators for memory-efficient file processing.
+- **File Handlers**: File handlers, such as `TicketFileReader` and `WinningNumbersFileReader`, are responsible for reading ticket entry and winning number files from the filesystem. They utilize generators and parallel processing for memory-efficient file handling.
 
 - **Winning Numbers Finder**: The `WinningNumbersFinder` class determines winning tickets by comparing ticket entries with winning numbers. It uses efficient algorithms to handle various ball sets and lottery rules.
 
